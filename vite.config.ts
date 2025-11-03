@@ -19,10 +19,13 @@ export default defineConfig({
   },
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
+  
+  // CORREÇÃO: Define a saída como 'dist' (relativa ao 'root'/'client')
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: 'dist', 
     emptyOutDir: true,
   },
+  
   server: {
     port: 3000,
     strictPort: false, // Will find next available port if 3000 is busy
