@@ -178,14 +178,26 @@ export default function Home() {
                 className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                A Agro FiV nasceu com o compromisso de levar a <strong>Fertilização In Vitro (FIV)</strong> com excelência e propósito ao produtor rural. Somos especialistas em biotecnologia reprodutiva bovina, atuando na vanguarda da ciência para garantir o aumento da produtividade e a rentabilidade do seu negócio.
-              </p>
+                A <strong>Agro FiV</strong> nasceu com o propósito de levar a <strong>Fertilização In Vitro (FIV)</strong> com excelência e propósito ao produtor rural. Somos especialistas em <strong>biotecnologia reprodutiva bovina</strong>, atuando na vanguarda da ciência para garantir <strong>aumento de produtividade e rentabilidade</strong> no campo.
+                 </p>
+              <p>
+                Com técnica e experiencia, <strong>planejamos e executamos projetos reprodutivos personalizados</strong> para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar <strong>resultados mensuráveis e sustentáveis.</strong>
+                </p>
+              <p>
+                Nosso foco está em <strong>avaliar índices zootécnicos e financeiros</strong> e transformar dados em <strong>decisões que elevam o desempenho e a lucratividade do rebanho.</strong>
+                </p>
                <p 
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                <strong>Nosso Diferencial:</strong> Enquanto o Brasil se consolida como líder mundial em FIV, a Agro FiV se posiciona em <strong>Araguaína - TO</strong>, um polo de crescimento do agronegócio, oferecendo expertise local, atendimento personalizado e um processo que garante a máxima eficiência.
-              </p>
+                <strong>Nosso Diferencial:</strong> Enquanto o produtor busca <strong>maximizar ganhos</strong>, a Agro FiV entrega o melhor da <strong>seleção genética bovina</strong>: <strong>produtividade, eficiência e resultados reais.</strong>
+                 </p>
+              <p>
+                Através de <strong>identificação individual, softwares avançados</strong> e <strong>análise genômica</strong>, aceleramos a evolução genética do rebanho em poucos anos de trabalho.
+                </p>
+              <p>
+                <strong>Na Agro FiV, o futuro do seu rebanho começa agora — com ciência, confiança e resultado.</strong>
+                </p>
             </div>
           </div>
         </div>
