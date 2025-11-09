@@ -179,25 +179,25 @@ export default function Home() {
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
                 A <strong>Agro FiV</strong> nasceu com o propósito de levar a <strong>Fertilização In Vitro (FIV)</strong> com excelência e propósito ao produtor rural. Somos especialistas em <strong>biotecnologia reprodutiva bovina</strong>, atuando na vanguarda da ciência para garantir <strong>aumento de produtividade e rentabilidade</strong> no campo.
-                 </p>
-              <p>
-                Com técnica e experiencia, <strong>planejamos e executamos projetos reprodutivos personalizados</strong> para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar <strong>resultados mensuráveis e sustentáveis.</strong>
-                </p>
-              <p>
+              </p>
+              <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
+                Com equipe técnica experiente, <strong>planejamos e executamos projetos reprodutivos personalizados</strong> para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar <strong>resultados mensuráveis e sustentáveis.</strong>
+              </p>
+              <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
                 Nosso foco está em <strong>avaliar índices zootécnicos e financeiros</strong> e transformar dados em <strong>decisões que elevam o desempenho e a lucratividade do rebanho.</strong>
-                </p>
+              </p>
                <p 
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
                 <strong>Nosso Diferencial:</strong> Enquanto o produtor busca <strong>maximizar ganhos</strong>, a Agro FiV entrega o melhor da <strong>seleção genética bovina</strong>: <strong>produtividade, eficiência e resultados reais.</strong>
-                 </p>
-              <p>
+              </p>
+              <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
                 Através de <strong>identificação individual, softwares avançados</strong> e <strong>análise genômica</strong>, aceleramos a evolução genética do rebanho em poucos anos de trabalho.
-                </p>
-              <p>
+              </p>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
                 <strong>Na Agro FiV, o futuro do seu rebanho começa agora — com ciência, confiança e resultado.</strong>
-                </p>
+              </p>
             </div>
           </div>
         </div>
@@ -225,17 +225,17 @@ export default function Home() {
             {[
               {
                 title: "Planejamento Genético Estratégico",
-                description: "Análise completa do seu rebanho e definição das melhores estratégias reprodutivas para atingir nossos objetivos de produtividade.",
+                description: "O Planejamento Genético Estratégico da Agro FiV começa com uma análise completa do rebanho e a definição das melhores matrizes e estratégias reprodutivas para cada fazenda. Nosso objetivo é maximizar os lucros e resultados da propriedade por meio de decisões técnicas e personalizadas, traçadas desde o início do projeto e acompanhadas de forma contínua.",
                 icon: "📊"
               },
               {
                 title: "Produção de Embriões",
-                description: "Em parceria com laboratórios especializados, Otimizamos a eficiencia reprodutiva de doadoras de alta performace, produzindo embriões de qualidade e acelerando o melhoramento genético de rebanhos de corte ou leite.",
+                description: "Em parceria com laboratórios especializados, otimizamos a eficiência reprodutiva de doadoras de alta performance, produzindo embriões de qualidade superior e acelerando o melhoramento genético de rebanhos de corte e leite. Realizamos seleção de doadoras e receptoras, aspiração folicular (OPU) e transferência de embriões (TE), garantindo resultados consistentes e rastreáveis.",
                 icon: "🧬"
               },
               {
                 title: "IATF",
-                description: "Serviços de Inseminação Artificial em Tempo Fixo (IATF) com acompanhamento técnico para maximizar os índices reprodutivos e lucratividade",
+                description: "A IATF faz parte do nosso método integrado: planejamento, avaliação, identificação e seleção de touros, rotina de manejo e vacinação antes da estação de monta. Atuamos dentro da fazenda com treinamentos periódicos e acompanhamento técnico, apresentando resultados claros e mensuráveis para próximas decisões baseadas em dados.",
                 icon: "💉"
               }
             ].map((service, idx) => (
