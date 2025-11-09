@@ -4,9 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MessageCircle, Mail, Phone, MapPin, Send, Menu } from "lucide-react";
 import { useState } from "react";
+import { useMobile } from "@/hooks/useMobile";
 import { toast } from "sonner";
 
 export default function Home() {
+  const isMobile = useMobile();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
