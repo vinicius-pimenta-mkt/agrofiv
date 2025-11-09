@@ -153,7 +153,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* Imagem */}
-            <div className="order-2 md:order-1 -ml-4 md:-ml-8 lg:-ml-16 xl:-ml-24 2xl:-ml-32 md:max-w-md max-w-xs mx-auto">
+            <div className="order-2 md:order-1 -ml-4 md:-ml-8 lg:-ml-12 xl:-ml-20 2xl:-ml-24 w-full md:max-w-xl mx-auto">
               <img 
                 src="/midiasagrofiv3.png" 
                 alt="Agro FiV - Quem Somos" 
