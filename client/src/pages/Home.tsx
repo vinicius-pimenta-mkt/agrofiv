@@ -104,7 +104,7 @@ export default function Home() {
       <section 
         className="relative w-full bg-cover bg-center"
         style={{
-          backgroundImage: "url('/fundo.png')",
+          backgroundImage: `url('${isMobile ? '/midiasagrofiv4.png' : '/fundo.png'}')`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           minHeight: '500px',
