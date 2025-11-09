@@ -168,7 +168,7 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-black text-gray-900 mb-4"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800 }}
               >
-                Agro FiV
+                AgroFiV
               </h2>
               <h3 
                 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 md:mb-6"
@@ -180,25 +180,25 @@ export default function Home() {
                 className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                A <strong>Agro FiV</strong> nasceu com o propósito de levar a <strong>Fertilização In Vitro (FIV)</strong> com excelência e propósito ao produtor rural. Somos especialistas em <strong>biotecnologia reprodutiva bovina</strong>, atuando na vanguarda da ciência para garantir <strong>aumento de produtividade e rentabilidade</strong> no campo.
+                A AgroFiV nasceu com o propósito de levar a <strong>Fertilização In Vitro (FIV)</strong> com excelência e propósito ao produtor rural. Somos especialistas em biotecnologia reprodutiva bovina, atuando na vanguarda da ciência para garantir o aumento de produtividade e rentabilidade no campo.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
-                Com equipe técnica experiente, <strong>planejamos e executamos projetos reprodutivos personalizados</strong> para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar <strong>resultados mensuráveis e sustentáveis.</strong>
+                Com equipe técnica experiente, planejamos e executamos projetos reprodutivos personalizados para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar resultados mensuráveis e eficientes.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
-                Nosso foco está em <strong>avaliar índices zootécnicos e financeiros</strong> e transformar dados em <strong>decisões que elevam o desempenho e a lucratividade do rebanho.</strong>
+                Nosso foco está em avaliar índices zootécnicos e financeiros e transformar dados em decisões que elevam o desempenho e a lucratividade do rebanho.
               </p>
                <p 
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                <strong>Nosso Diferencial:</strong> Enquanto o produtor busca <strong>maximizar ganhos</strong>, a Agro FiV entrega o melhor da <strong>seleção genética bovina</strong>: <strong>produtividade, eficiência e resultados reais.</strong>
+                <strong>Nosso Diferencial:</strong> Enquanto o produtor busca maximizar ganhos, a AgroFiV entrega o melhor da seleção genética bovina: produtividade, eficiência e resultados reais.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
-                Através de <strong>identificação individual, softwares avançados</strong> e <strong>análise genômica</strong>, aceleramos a evolução genética do rebanho em poucos anos de trabalho.
+                Através de identificação individual, softwares avançados e principalmente a análise genômica, aceleramos a evolução genética do rebanho em poucos anos de trabalho.
               </p>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
-                <strong>Na Agro FiV, o futuro do seu rebanho começa agora — com ciência, confiança e resultado.</strong>
+                <strong>Na Agro FiV, o futuro do seu rebanho começa agora, com ciência, confiança e resultado.</strong>
               </p>
             </div>
           </div>
