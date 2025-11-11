@@ -13,7 +13,7 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const whatsappNumber = "+5563984789080";
-  const whatsappMessage = "Olá! Gostaria de saber mais sobre os serviços de FIV da Agro FiV.";
+  const whatsappMessage = "Olá! Gostaria de saber mais sobre os serviços de FIV da AgroFIV.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const emailAddress = "contato.agrofiv@gmail.com";
   const phoneNumber = "+55 (63) 98478-9080";
@@ -34,7 +34,7 @@ export default function Home() {
     setIsSubmitting(true);
     
     try {
-      const subject = "Nova Mensagem de Contato - Agro FiV";
+      const subject = "Nova Mensagem de Contato - AgroFIV";
       const body = `Nome: ${formData.name}\nEmail: ${formData.email}\nTelefone: ${formData.phone}\n\nMensagem:\n${formData.message}`;
       const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       
@@ -168,7 +168,7 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-black text-gray-900 mb-4"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800 }}
               >
-                AgroFiV
+                AgroFIV
               </h2>
               <h3 
                 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 md:mb-6"
@@ -180,7 +180,7 @@ export default function Home() {
                 className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                A AgroFiV nasceu com o propósito de levar a <strong>Fertilização In Vitro (FIV)</strong> com excelência e propósito ao produtor rural. Somos especialistas em biotecnologia reprodutiva bovina, atuando na vanguarda da ciência para garantir o aumento de produtividade e rentabilidade no campo.
+                A AgroFIV nasceu com o propósito de levar a <strong>Produção in vitro de Embriões (PIVE)</strong> com excelência e propósito ao produtor rural. Somos especialistas em biotecnologia reprodutiva bovina, atuando na vanguarda da ciência para garantir o aumento de produtividade e rentabilidade no campo.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
                 Com equipe técnica experiente, planejamos e executamos projetos reprodutivos personalizados para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar resultados mensuráveis e eficientes.
@@ -192,13 +192,13 @@ export default function Home() {
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                <strong>Nosso Diferencial:</strong> Enquanto o produtor busca maximizar ganhos, a AgroFiV entrega o melhor da seleção genética bovina: produtividade, eficiência e resultados reais.
+                <strong>Nosso Diferencial:</strong> Enquanto o produtor busca maximizar ganhos, a AgroFIV entrega o melhor da seleção genética bovina: produtividade, eficiência e resultados reais.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
                 Através de identificação individual, softwares avançados e principalmente a análise genômica, aceleramos a evolução genética do rebanho em poucos anos de trabalho.
               </p>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
-                <strong>Na Agro FiV, o futuro do seu rebanho começa agora, com ciência, confiança e resultado.</strong>
+                <strong>Na AgroFIV, o futuro do seu rebanho começa agora, com ciência, confiança e resultado.</strong>
               </p>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function Home() {
             {[
               {
                 title: "Planejamento Genético Estratégico",
-                description: "O Planejamento Genético Estratégico da Agro FiV começa com uma análise completa do rebanho e a definição das melhores matrizes e estratégias reprodutivas para cada fazenda. Nosso objetivo é maximizar os lucros e resultados da propriedade por meio de decisões técnicas e personalizadas, traçadas desde o início do projeto e acompanhadas de forma contínua.",
+                description: "O Planejamento Genético Estratégico da AgroFIV começa com uma análise completa do rebanho e a definição das melhores matrizes e estratégias reprodutivas para cada fazenda. Nosso objetivo é maximizar os lucros e resultados da propriedade por meio de decisões técnicas e personalizadas, traçadas desde o início do projeto e acompanhadas de forma contínua.",
                 icon: "📊"
               },
               {
@@ -280,7 +280,7 @@ export default function Home() {
             className="text-lg md:text-xl text-gray-700 mb-8 md:mb-12 max-w-2xl"
             style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
           >
-            Quem confia na genética Agro FiV.
+            Quem confia na genética AgroFIV.
           </p>
           
           <div className="border-4 border-green-700 p-6 md:p-12 bg-gray-50">
