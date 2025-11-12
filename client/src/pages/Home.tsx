@@ -189,7 +189,7 @@ export default function Home() {
                 className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed"
                 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
               >
-                A AgroFIV nasceu com o propósito de levar a <strong>Produção in vitro de Embriões (PIVE)</strong> com excelência e propósito ao produtor rural. Somos especialistas em biotecnologia reprodutiva bovina, atuando na vanguarda da ciência para garantir o aumento de produtividade e rentabilidade no campo.
+                A AgroFIV nasceu com o propósito de levar a <strong>Produção in vitro de Embriões (PIVE)</strong> com excelência e propósito ao produtor rural. Somos especializados em biotecnologia reprodutiva bovina, atuando na vanguarda da ciência para garantir o aumento de produtividade e rentabilidade no campo.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}>
                 Com equipe técnica experiente, planejamos e executamos projetos reprodutivos personalizados para cada fazenda, integrando <strong>PIVE, IATF, estação de monta</strong> e <strong>análise genômica</strong> para alcançar resultados mensuráveis e eficientes.
