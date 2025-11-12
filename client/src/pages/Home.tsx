@@ -4,10 +4,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MessageCircle, Mail, Phone, MapPin, Send, Menu } from "lucide-react";
 import { useState } from "react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { toast } from "sonner";
 
 export default function Home() {
+  const imagePaths = [
+    "/agrofiv01.JPEG", "/agrofiv02.JPEG", "/agrofiv03.JPEG", "/agrofiv04.JPEG", "/agrofiv05.JPEG",
+    "/agrofiv06.JPEG", "/agrofiv07.JPEG", "/agrofiv08.JPEG", "/agrofiv09.JPEG", "/agrofiv10.JPG",
+    "/agrofiv11.JPEG", "/agrofiv12.JPEG", "/agrofiv13.JPEG", "/agrofiv14.JPEG", "/agrofiv15.JPEG",
+    "/agrofiv16.JPEG", "/agrofiv17.JPEG", "/agrofiv18.JPEG",
+  ];
   
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -267,67 +276,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Resultados */}
+      {/* Resultados - Galeria de Imagens */}
       <section id="resultados" className="py-12 md:py-28 bg-white border-b-2 border-gray-200">
         <div className="container mx-auto px-4">
-          <h2 
-            className="text-3xl md:text-4xl font-black text-gray-900 mb-4"
-            style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800 }}
-          >
-            Resultados
-          </h2>
-          <p 
-            className="text-lg md:text-xl text-gray-700 mb-8 md:mb-12 max-w-2xl"
-            style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
-          >
-            Quem confia na genética AgroFIV.
-          </p>
-          
-          <div className="border-4 border-green-700 p-6 md:p-12 bg-gray-50">
-             <p 
-              className="text-base md:text-lg text-gray-700 mb-6 md:mb-8 leading-relaxed"
+          <div className="mb-12 md:mb-16 text-center">
+            <h2 
+              className="text-3xl md:text-4xl font-black text-gray-900 mb-2"
+              style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800 }}
+            >
+              Quem confia na genética AgroFIV.
+            </h2>
+            <p 
+              className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
             >
-              A confiança do produtor rural é o nosso maior resultado. Este espaço está reservado para inserir:
+              A confiança do produtor rural é o nosso maior resultado.
             </p>
-            <ul className="space-y-3 md:space-y-4 text-gray-700 mb-6 md:mb-8">
-              <li className="flex items-start gap-3 md:gap-4">
-                <span className="text-green-700 font-bold text-lg md:text-xl flex-shrink-0">▪</span>
-                <span 
-                  className="text-base md:text-lg"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
-                >
-                  <strong>Depoimentos</strong> de clientes satisfeitos (texto e/ou vídeo).
-                </span>
-              </li>
-              <li className="flex items-start gap-3 md:gap-4">
-                <span className="text-green-700 font-bold text-lg md:text-xl flex-shrink-0">▪</span>
-                <span 
-                  className="text-base md:text-lg"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
-                >
-                  <strong>Números de Sucesso</strong> (Ex: +X mil embriões produzidos, X% de taxa de prenhez).
-                </span>
-              </li>
-              <li className="flex items-start gap-3 md:gap-4">
-                <span className="text-green-700 font-bold text-lg md:text-xl flex-shrink-0">▪</span>
-                <span 
-                  className="text-base md:text-lg"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
-                >
-                  <strong>Logos de Parceiros</strong> (se houver).
-                </span>
-              </li>
-            </ul>
-            <Button 
-              className="bg-green-700 hover:bg-green-800 text-white font-semibold text-sm md:text-base"
-              style={{ borderRadius: 0 }}
-              onClick={() => window.location.href = whatsappLink}
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              Conheça Nossos Resultados
-            </Button>
           </div>
+
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {imagePaths.map((path, index) => (
+                <CarouselItem key={index} className="pl-4 basis-1/2 md:basis-1/4 lg:basis-1/5">
+                  <div className="p-1">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <img
+                          src={path}
+                          alt={`Resultado ${index + 1}`}
+                          className="w-full h-48 object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02] shadow-lg"
+                        />
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl p-0">
+                        <img
+                          src={path}
+                          alt={`Resultado ${index + 1} - Expandido`}
+                          className="w-full h-auto max-h-[90vh] object-contain"
+                        />
+                      </DialogContent>
+                    </Dialog>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2 md:left-6" />
+            <CarouselNext className="right-2 md:right-6" />
+          </Carousel>
         </div>
       </section>
 
