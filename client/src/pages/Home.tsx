@@ -91,7 +91,7 @@ export default function Home() {
           </Button>
           
           {/* Menu Hambúrguer Mobile */}
-          <div className="md:hidden ml-2">
+          <div className="md:hidden ml-auto">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="rounded-full">
@@ -279,15 +279,15 @@ export default function Home() {
       {/* Resultados - Galeria de Imagens */}
       <section id="resultados" className="py-12 md:py-28 bg-white border-b-2 border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="mb-12 md:mb-16 text-center">
+          <div className="mb-12 md:mb-16 text-left">
             <h2 
               className="text-3xl md:text-4xl font-black text-gray-900 mb-2"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800 }}
             >
-              Quem confia na genética AgroFIV.
+              Quem confia<br/>na genética AgroFIV.
             </h2>
             <p 
-              className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto"
+              className="text-lg md:text-xl text-gray-700 max-w-3xl"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
             >
               A confiança do produtor rural é o nosso maior resultado.
@@ -301,19 +301,19 @@ export default function Home() {
             }}
             className="w-full max-w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2">
               {imagePaths.map((path, index) => (
-                <CarouselItem key={index} className="pl-4 basis-1/2 md:basis-1/4 lg:basis-1/5">
-                  <div className="p-1">
+                <CarouselItem key={index} className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="p-0">
                     <Dialog>
                       <DialogTrigger asChild>
                         <img
                           src={path}
                           alt={`Resultado ${index + 1}`}
-                          className="w-full h-48 object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02] shadow-lg"
+                          className="w-full h-64 md:h-72 object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02] shadow-lg"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-4xl p-0">
+                      <DialogContent className="max-w-5xl p-0 bg-black">
                         <img
                           src={path}
                           alt={`Resultado ${index + 1} - Expandido`}
