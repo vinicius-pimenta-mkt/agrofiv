@@ -74,33 +74,36 @@ export default function Home() {
             <img src="/logo-light.png" alt="Agro FiV" className="h-10 md:h-12" />
           </div>
           
-          <nav className="hidden md:flex gap-8">
+          {/* AJUSTE FINAL: flex-grow e justify-center garantem que a NAV ocupe o espaço e centralize no desktop */}
+          <nav className="hidden md:flex flex-grow justify-center gap-8">
             <button onClick={() => scrollToSection('quem-somos')} className="text-gray-700 hover:text-green-700 transition font-medium text-sm cursor-pointer">Quem Somos</button>
             <button onClick={() => scrollToSection('servicos')} className="text-gray-700 hover:text-green-700 transition font-medium text-sm cursor-pointer">Serviços</button>
             <button onClick={() => scrollToSection('resultados')} className="text-gray-700 hover:text-green-700 transition font-medium text-sm cursor-pointer">Resultados</button>
             <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-green-700 transition font-medium text-sm cursor-pointer">Contato</button>
           </nav>
           
-          {/* INÍCIO DA ALTERAÇÃO: Agrupamento do Botão e Menu para Alinhamento Mobile */}
-          <div className="flex items-center gap-3 ml-auto">
-            
-            {/* Botão de Contato ÚNICO: Agora visível no mobile e ajustado */}
+          {/* Botão de Contato Desktop (Visível apenas em telas grandes) */}
+          <Button 
+            className="hidden md:flex bg-green-700 hover:bg-green-800 text-white font-semibold text-xs md:text-sm px-3 md:px-4 py-2 rounded-full" 
+            onClick={() => window.location.href = whatsappLink}
+          >
+            <MessageCircle className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
+            <span className="sm:inline">Fale Conosco</span>
+          </Button>
+          
+          {/* Container Mobile para Botão de Contato e Menu Hambúrguer */}
+          <div className="md:hidden flex items-center gap-3 ml-auto">
+            {/* Botão de Contato Mobile (Visível apenas em telas pequenas) */}
             <Button 
-              // A classe 'hidden md:flex' foi removida.
-              // As classes de tamanho são ajustadas para Mobile (text-xs, px-3) e Desktop (md:text-sm, md:px-4).
-              className="flex bg-green-700 hover:bg-green-800 text-white font-semibold rounded-full 
-                         text-xs px-3 py-2 md:text-sm md:px-4 md:py-2" 
+              className="bg-green-700 hover:bg-green-800 text-white font-semibold text-xs px-3 py-2 rounded-full" 
               onClick={() => window.location.href = whatsappLink}
             >
-              <MessageCircle className="w-3 h-3 mr-1 md:w-4 md:h-4 md:mr-2" />
-              {/* O texto Fale Conosco aparece em telas maiores (>= 640px) */}
-              <span className="hidden sm:inline">Fale Conosco</span>
-              {/* O texto Contato aparece apenas no mobile pequeno (< 640px) */}
-              <span className="sm:hidden">Contato</span>
+              <MessageCircle className="w-3 h-3 mr-1" />
+              <span>Contato</span>
             </Button>
-
-            {/* Menu Hambúrguer Mobile: Agora sem 'ml-auto', pois o flex container pai alinha tudo. */}
-            <div className="md:hidden">
+            
+            {/* Menu Hambúrguer Mobile */}
+            <div>
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="outline" size="icon" className="rounded-full">
@@ -118,7 +121,6 @@ export default function Home() {
               </Sheet>
             </div>
           </div>
-          {/* FIM DA ALTERAÇÃO */}
         </div>
       </header>
 
